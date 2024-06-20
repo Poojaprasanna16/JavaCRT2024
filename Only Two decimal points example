@@ -1,0 +1,22 @@
+//Program on printing 2 Decimal points only
+
+class Test1
+{
+public static void main(String args[])
+{
+double a=45.7578;
+System.out.printf("%.2f",a);
+}
+}
+
+Command Prompt:
+
+C:\Users\Hello>d:
+
+D:\>cd JavaCrt
+
+D:\JavaCRT>javac Test1.java
+
+D:\JavaCRT>java Test1
+45.76
+D:\JavaCRT>
