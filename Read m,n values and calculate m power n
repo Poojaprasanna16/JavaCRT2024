@@ -1,0 +1,19 @@
+//Read m,n values and calculate m power n
+
+import java.util.*;
+class Power{
+public static void main(String args[])
+{
+Scanner s=new Scanner(System.in);
+int m;
+int n;
+m=s.nextInt();
+n=s.nextInt();
+int b=(int)Math.pow(m,n);
+System.out.println(b);
+}
+}
+
+Output:
+4 2
+16
