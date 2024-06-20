@@ -1,0 +1,17 @@
+//sample Program
+
+class Test
+{
+public static void main(String args[])
+{
+System.out.println("Java");
+System.out.println("Python");
+}
+}
+
+Output:
+javac Test.java
+java Test
+
+Java
+Python
