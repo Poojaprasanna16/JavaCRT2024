@@ -24,3 +24,36 @@ Sample Input 1
 Sample Output 1
 
 408266
+
+
+SOURCE CODE
+import java.io.*;
+import java.util.*;
+
+public class Solution {
+
+    public static void main(String[] args) {
+     Scanner s =new Scanner(System.in);
+        int n=s.nextInt();
+        int digit,sum=0;
+        int len=(int)(Math.log10(n)+1);
+        for(int i=0;i<len;i++)
+        {
+            digit=n%10;
+            n=n/10;
+            sum=sum+factorial(digit);
+        }
+        System.out.print(sum);
+    }
+      public  static int factorial(int n)
+        {
+             int fact=1;
+            for(int i=1;i<=n;i++)
+            {
+                fact=fact*i;
+            }
+          return fact;
+        }
+        
+}
+
