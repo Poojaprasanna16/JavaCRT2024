@@ -1,0 +1,31 @@
+//Read two strings and print strings are same or not
+
+
+import java.util.*;
+
+class StringMethods {
+    public static void main(String[] args) {
+      Scanner s=new Scanner(System.in);
+      String s1=s.next();
+      String s2=s.next();
+      if(s1.equals(s2))
+      {
+          System.out.println("same");
+          
+      }
+      else
+      {
+          System.out.println("Not same");
+      }
+    }
+}
+
+OUTPUT:
+java
+python
+Not same
+
+
+2.java
+  java
+ same
