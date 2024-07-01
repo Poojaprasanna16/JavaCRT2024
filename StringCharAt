@@ -1,0 +1,24 @@
+/To read a string and print one by one character
+
+import java.util.*;
+
+class StringMethods {
+    public static void main(String[] args) {
+        Scanner s=new Scanner(System.in);
+        String s1=s.next();
+        for(int i=0;i<s1.length();i++)
+        {
+            System.out.println(s1.charAt(i));
+        }
+    }
+}
+
+Input:
+python
+Output:
+p
+y
+t
+h
+o
+n
