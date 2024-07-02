@@ -1,0 +1,59 @@
+/Read a string and print no.of alphabtes,no.of uppercase,lowercase,digit,symbols
+
+import java.util.*;
+  class StringCount
+{
+public static void main(String args[])
+{
+ Scanner s=new Scanner(System.in);
+  String str=s.nextLine();  //contains multiple statements
+ int alphabet=0,lowercase=0,uppercase=0,digit=0,symbol=0;
+for(int i=0;i<str.length();i++)
+{
+char ch=str.charAt(i);
+if(Character.isLetter(ch))
+{
+alphabet++;
+if(Character.isUpperCase(ch))
+{
+uppercase++;
+}
+else if(Character.isLowerCase(ch))
+{
+lowercase++;
+}
+}
+else if(Character.isDigit(ch))
+{
+digit++;
+}
+else {
+symbol++;
+}
+}
+System.out.println("Alphabet:"+alphabet);
+System.out.println("UpperCase:" +uppercase);
+System.out.println("LowerCase:"+lowercase);
+System.out.println("Digit:" +digit);
+System.out.println("Symbol:"+symbol);
+}
+}
+
+input:
+Poojaprasanna@12
+
+output:
+Alphabet:13
+UpperCase:1
+LowerCase:12
+Digit:2
+Symbol:1
+
+input:
+pooja prasanna
+output:
+Alphabet:13
+UpperCase:0
+LowerCase:13
+Digit:0
+Symbol:1
